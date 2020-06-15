@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "release:pages": "rm -rf ../docs && npm run build && cp -R readme dist/ && cp -R license dist/ && cp -R dist ../docs",
+    "run": "es-dev-server --root-dir ../docs",
     "start": "webpack-dev-server"
   },
   "repository": {
@@ -31,10 +31,9 @@
     "wasm-ferris-says": "file:../pkg"
   },
   "devDependencies": {
-    "hello-wasm-pack": "^0.1.0",
+    "es-dev-server": "^1.55.0",
     "webpack": "^4.29.3",
     "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5",
-    "copy-webpack-plugin": "^5.0.0"
+    "webpack-dev-server": "^3.1.5"
   }
 }
