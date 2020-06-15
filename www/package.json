@@ -8,6 +8,7 @@
   },
   "scripts": {
     "build": "webpack --config webpack.config.js",
+    "release:pages": "rm -rf ../docs && npm run build && cp -R readme dist/ && cp -R license dist/ && cp -R dist ../docs",
     "start": "webpack-dev-server"
   },
   "repository": {
