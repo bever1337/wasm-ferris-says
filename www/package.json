@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "run": "es-dev-server --root-dir ../docs",
+    "run": "es-dev-server",
     "start": "webpack-dev-server"
   },
   "repository": {
