@@ -8,8 +8,8 @@
   },
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "run": "es-dev-server",
-    "start": "webpack-dev-server"
+    "start": "es-dev-server",
+    "_start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",

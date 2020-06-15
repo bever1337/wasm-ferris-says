@@ -13,5 +13,6 @@ A little glue on the `ferris-says` crate to support easy WASM interop.
 - Generate WASM for rust glue: `wasm-pack build`
 - Navigate to the test client: `cd www`
 - Install node depdencies: `npm i`
-- Start the http dev server: `npm run start`
+- Bundle the WASM node module: `npm run build`
+- Start the dev server: `npm run start`
 - Navigate to `localhost:8080` in your browser of choice
