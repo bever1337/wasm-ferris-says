@@ -18,6 +18,14 @@
   --bios-white: #fff;
 }
 
+a:visited {
+  color: var(--bios-magenta);
+}
+
+a:active {
+  color: var(--bios-red);
+}
+
 html {
   font-size: calc(100% + 0.125vw);
 }
@@ -54,7 +62,12 @@ header > h1 {
 
 header > nav {
   color: var(--bios-white);
-  padding: 0.25rem 1.5rem;
+  padding: 0 1rem;
+}
+
+nav > ul {
+  display: flex;
+  flex-flow: row;
 }
 
 ul,
@@ -69,8 +82,20 @@ li {
 }
 
 li > a {
-  text-transform: capitalize;
+  display: inline-block;
   color: var(--bios-light-gray);
+  padding: 0.25rem 1rem 0.25rem 0.5rem;
+  text-transform: capitalize;
+}
+
+li > a:visited:not(.active) {
+  color: var(--bios-light-gray);
+}
+
+li > a.active,
+li:hover > a {
+  background-color: var(--bios-light-gray);
+  color: var(--bios-blue) !important;
 }
 
 /* main */
@@ -117,6 +142,7 @@ textarea {
   margin: 0;
   padding: 0.25em 0.125em;
   width: 100%;
+  max-width: 30em;
 }
 
 label + textarea,
@@ -131,6 +157,18 @@ pre {
   height: 100%;
   margin: 0;
   padding: 2em 0.5em 0 0.5em;
+}
+
+pre.wrap {
+  white-space: break-spaces;
+}
+
+span.tick-marks {
+  color: var(--bios-brown);
+}
+
+span.link-desc {
+  color: var(--bios-yellow);
 }
 
 /* footer */
