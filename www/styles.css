@@ -1,0 +1,148 @@
+:root {
+  /* bios vga colors */
+  --bios-black: #000;
+  --bios-blue: #0000aa;
+  --bios-green: #00aa00;
+  --bios-cyan: #00aaaa;
+  --bios-red: #aa0000;
+  --bios-magenta: #aa00aa;
+  --bios-brown: #aa5500;
+  --bios-light-gray: #aaaaaa;
+  --bios-dark-gray: #555555;
+  --bios-light-blue: #5555ff;
+  --bios-light-green: #55ff55;
+  --bios-light-cyan: #55ffff;
+  --bios-light-red: #ff5555;
+  --bios-light-magenta: #ff55ff;
+  --bios-yellow: #ffff55;
+  --bios-white: #fff;
+}
+
+html {
+  font-size: calc(100% + 0.125vw);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bios-blue);
+  display: grid;
+  font-family: monospace;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-width: 320px;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+/* header */
+header > h1 {
+  background-color: var(--bios-cyan);
+  color: var(--bios-black);
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.125rem 1.5rem;
+}
+
+header > nav {
+  color: var(--bios-white);
+  padding: 0.25rem 1.5rem;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+li > a {
+  text-transform: capitalize;
+  color: var(--bios-light-gray);
+}
+
+/* main */
+main {
+  background-color: var(--bios-light-gray);
+  padding: 0.75em 0.5em;
+}
+
+/* main > section */
+section {
+  align-content: start;
+  border: 2px solid var(--bios-black);
+  border-top: 1px solid var(--bios-black);
+  border-bottom: 1px solid var(--bios-black);
+  box-sizing: border-box;
+  display: grid;
+  height: 100%;
+  grid-template-rows: auto 1px auto;
+  padding: 0.5em 0;
+}
+
+hr {
+  border: 1px solid var(--bios-black);
+  width: 100%;
+}
+
+/* main > section > form */
+form {
+  padding: 0 0.5em 2em 0.5em;
+}
+
+label {
+  display: block;
+  text-transform: capitalize;
+}
+
+textarea {
+  vertical-align: super;
+}
+
+input[type="number"],
+textarea {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0.25em 0.125em;
+  width: 100%;
+}
+
+label + textarea,
+label + input[type="number"] {
+  margin-bottom: 1em;
+}
+
+/* main > section > ferris */
+pre {
+  box-sizing: border-box;
+  color: var(--bios-black);
+  height: 100%;
+  margin: 0;
+  padding: 2em 0.5em 0 0.5em;
+}
+
+/* footer */
+footer {
+  background-color: var(--bios-cyan);
+  color: var(--bios-black);
+  text-align: center;
+  padding: 0.125rem 1.5rem;
+}
+
+footer > img {
+  height: 1.5rem;
+  vertical-align: sub;
+  margin-right: 0.5rem;
+}
